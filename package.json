@@ -1,0 +1,14 @@
+{
+  "name": "open311",
+  "description": "A Node.js module for interacting with the Open311 API.",
+  "version": "0.0.3",
+  "homepage": "http://voiceingov.org",
+  "author": "Mark Headd <mheadd@voiceingov.org> (http://voiceingov.org)",
+  "main": "./lib/open311",
+  "repositories" : [
+    { "type":"git", "url":"https://github.com/mheadd/node-open311" }
+  ],
+  "engines": {
+    "node": ">= 0.2.4"
+  }
+}
