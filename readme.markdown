@@ -10,7 +10,7 @@ npm install open311
 
 Usage
 =====
-<pre><code>
+<code>
 var sys = require('sys');
 var Open311 = require('open311').Open311;
 
@@ -29,11 +29,13 @@ report.addListener('responseBody', function(body) {
 	}
 	
 });
-</code></pre>
+</code>
 
 Output
 ======
 
+<pre>
 Response code: 200
 Service Code: S0276
 Service Name: Parking Meter Request
+</pre>
