@@ -10,7 +10,7 @@ npm install open311
 
 Usage
 =====
-<code>
+<pre>
 var sys = require('sys');
 var Open311 = require('open311').Open311;
 
@@ -29,7 +29,7 @@ report.addListener('responseBody', function(body) {
 	}
 	
 });
-</code>
+</pre>
 
 Output
 ======
