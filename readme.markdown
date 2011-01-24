@@ -26,8 +26,7 @@ report.addListener('responseBody', function(body) {
 	for(var i = 0; i < service_list.length; i++) {
 		sys.puts('Service Code: ' + service_list[i].service_code);
 		sys.puts('Service Name: ' + service_list[i].service_name);
-	}
-	
+	}	
 });
 </pre>
 
