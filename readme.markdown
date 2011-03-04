@@ -28,6 +28,7 @@ Usage
 	
 	report.addListener('responseCode', function(code) {
 		sys.puts('Response code: ' + code);
+		sys.puts('');
 	});
 	
 	report.addListener('responseBody', function(body) {
