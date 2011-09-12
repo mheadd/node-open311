@@ -14,6 +14,7 @@ var options = {
 // Create a new Open311 object.
 var report = new Open311(options);
 
+// Call getServiceRequest to get the status of a specific request.
 report.getServiceRequest('json', '4e6cbd2a9dc2f112940000bc', function(error, data) {	
 	util.puts(util.inspect(data));	
 });

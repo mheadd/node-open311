@@ -24,85 +24,25 @@ Usage
 	// Create a new Open311 object.
 	var report = new Open311(options);
 	
-	// Call getServiceList method and pass it return format and callback method.
-	report.getServiceList('json', function(error, data) {
-		if(error) {
-			util.puts('WARNING: ' + data);
-		}
-		else {
-			var services = JSON.parse(data);
-			for(var i = 0; i < services.length; i++) {
-		        util.puts('Service Name: ' + services[i].service_name);
-		        util.puts('Service Code: ' + services[i].service_code);
-		        util.puts('------');
-		    }
-		}	
+	// Call getServiceRequest to get the status of a specific request.
+	report.getServiceRequest('json', '4e6cbd2a9dc2f112940000bc', function(error, data) {	
+		util.puts(util.inspect(data));	
 	});
 
 
 Output
 ======
 
-Service Name: Graffiti Removal
-Service Code: 4e39a3aad3e2c20ed800000c
-------
-Service Name: Pothole
-Service Code: 4e39a3abd3e2c20ed8000016
-------
-Service Name: Sign Missing or Damaged
-Service Code: 4e39a3abd3e2c20ed8000021
-------
-Service Name: City Employee Praise
-Service Code: 4e4edcac21ecf30e5000000f
-------
-Service Name: Aggressive Animal
-Service Code: 4e39a3abd3e2c20ed8000025
-------
-Service Name: Dirty Alley or Street
-Service Code: 4e39a3aad3e2c20ed800000a
-------
-Service Name: Street Light Out
-Service Code: 4e39a3abd3e2c20ed800001a
-------
-Service Name: Traffic Signal Repair
-Service Code: 4e39a3abd3e2c20ed8000023
-------
-Service Name: City Employee Complaint
-Service Code: 4e39a3aad3e2c20ed8000007
-------
-Service Name: Dead Animal Pickup
-Service Code: 4e39a3abd3e2c20ed8000026
-------
-Service Name: Park Cleaning or Mowing
-Service Code: 4e39a3aad3e2c20ed800000e
-------
-Service Name: Damaged Sidewalk
-Service Code: 4e39a3abd3e2c20ed8000013
-------
-Service Name: Abandoned Vehicle
-Service Code: 4e39a3abd3e2c20ed800001d
-------
-Service Name: Food Facility Complaint
-Service Code: 4e39a3abd3e2c20ed8000027
-------
-Service Name: Trash, High Grass, or Weeds
-Service Code: 4e39a3abd3e2c20ed8000010
-------
-Service Name: Downed Tree or Limb
-Service Code: 4e39a3abd3e2c20ed8000014
-------
-Service Name: Parking Complaint
-Service Code: 4e39a3abd3e2c20ed800001f
-------
-Service Name: Other
-Service Code: 4e39a3abd3e2c20ed8000029
-------
-Service Name: Flooded Street
-Service Code: 4e39a3abd3e2c20ed8000019
-------
-Service Name: Storm Drain or Inlet
-Service Code: 4e39a3abd3e2c20ed8000017
-------
-Service Name: Water Leak (Exterior)
-Service Code: 4e39a3abd3e2c20ed800001b
-------
+[
+    {
+        "token": "4e6cbd2a9dc2f112940000bc",
+        "status": "submitted",
+        "service_name": "Graffiti Removal",
+        "service_code": "4e39a3aad3e2c20ed800000c",
+        "requested_datetime": "2011-09-11T09:52:43-04:00",
+        "updated_datetime": "2011-09-11T09:52:43-04:00",
+        "lat": 39.3257703014457,
+        "long": -76.5906496206646,
+        "media_url": "http://311test.baltimorecity.gov/attachments/report/4e6cbd2a9dc2f112940000bc/photo/395284434.jpg"
+    }
+]

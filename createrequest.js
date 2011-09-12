@@ -18,6 +18,8 @@ var parameters = {
 
 // Create a new Open311 object.
 var report = new Open311(options);
+
+// Call postSericeRequest to create a new service request.
 report.postSericeRequest('json', '4e39a3abd3e2c20ed8000016', 'your-api-key-here', parameters, function(error, data) {
 	util.puts(util.inspect(data));
 });
