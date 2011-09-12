@@ -33,16 +33,16 @@ Usage
 Output
 ======
 
-[
-    {
-        "token": "4e6cbd2a9dc2f112940000bc",
-        "status": "submitted",
-        "service_name": "Graffiti Removal",
-        "service_code": "4e39a3aad3e2c20ed800000c",
-        "requested_datetime": "2011-09-11T09:52:43-04:00",
-        "updated_datetime": "2011-09-11T09:52:43-04:00",
-        "lat": 39.3257703014457,
-        "long": -76.5906496206646,
-        "media_url": "http://311test.baltimorecity.gov/attachments/report/4e6cbd2a9dc2f112940000bc/photo/395284434.jpg"
-    }
-]
+	[
+	    {
+	        "token": "4e6cbd2a9dc2f112940000bc",
+	        "status": "submitted",
+	        "service_name": "Graffiti Removal",
+	        "service_code": "4e39a3aad3e2c20ed800000c",
+	        "requested_datetime": "2011-09-11T09:52:43-04:00",
+	        "updated_datetime": "2011-09-11T09:52:43-04:00",
+	        "lat": 39.3257703014457,
+	        "long": -76.5906496206646,
+	        "media_url": "http://311test.baltimorecity.gov/attachments/report/4e6cbd2a9dc2f112940000bc/photo/395284434.jpg"
+	    }
+	]
