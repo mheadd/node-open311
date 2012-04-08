@@ -1,5 +1,5 @@
 /**
- * 
+ * Create a new service request.
  */
 var util = require('util');
 var Open311 = require('./lib/open311').Open311;

@@ -1,5 +1,5 @@
 /**
- * Gets a list of all service types.
+ * Gets a list of all service request types.
  */
 
 var util = require('util');
